@@ -1,0 +1,19 @@
+.book {
+    display: flex;
+    font-size: large;
+    flex-direction: column;
+    margin-top:25px;
+    border-style: solid;
+    border-radius: 15%;
+    border-color: black;
+    width:fit-content;
+    padding: 3%;
+}
+
+.nvis {
+    visibility: hidden;
+}
+
+.vis {
+    visibility: visible;
+}
