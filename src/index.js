@@ -8,16 +8,18 @@ function clearBookElements(){
     })
 }
 
-function Books(title, author, pages, read){
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
-    this.info = () => {
+class Books {
+    constructor(title, author, pages, read){
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.read = read
+    }
+    info = () => {
         let hasRead = 'has not been read yet.'
         if (this.read) hasRead = 'has been read.'
         return (this.title + ' by ' + this.author + ', ' + this.pages + ' pages, ' + hasRead)
-    }
+    }  
 }
 
 function addBookToLibrary(book){
